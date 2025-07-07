@@ -1,0 +1,75 @@
+@import "tailwindcss";
+/* src/index.css */
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&display=swap');
+@import "tailwindcss"; /* Keep this below the font import */
+/* src/index.css */
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&display=swap');
+@import "tailwindcss";
+
+@layer utilities {
+  .marquee {
+    animation: marquee 20s linear infinite;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+}
+
+
+@theme {
+  --font-family-sans: "Satoshi", sans-serif;
+
+  --color-primary: #1777F7;
+  --color-secondary: #FFD03C;
+  --color-success: #50CD89;
+  --color-error: #F1416C;
+  --color-neutral-900: #101010;
+  --color-neutral-700: #404040;
+  --color-neutral-200: #E0E0E0;
+  --color-neutral-100: #F5F5F5;
+  --color-white: #FFFFFF;
+
+  --animation-marquee: marquee 20s linear infinite;
+
+}
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+body {
+  background-color: #101010; /* The dark background for the whole page */
+}
+
+.grid-background {
+  background-image:
+          linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+@keyframes type-and-erase {
+  0%, 10% {
+    width: 0;
+  }
+  45%, 55% {
+    width: 100%;
+  }
+  90%, 100% {
+    width: 0;
+  }
+}
+
+@keyframes blink-caret {
+  0%, 100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #38bdf8; /* or use your theme's primary */
+  }
+}
