@@ -7,4 +7,5 @@ export default defineConfig({
   plugins: [react(),
     tailwindcss(), // <-- Add the plugin
   ],
+  base: "/signio"
 })
