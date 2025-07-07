@@ -1,5 +1,5 @@
 // src/sections/Footer.jsx
-import logo from '../assets/Logo.svg';
+import logo from '../assets/logo.svg';
 
 export const Footer = () => {
     // Data object for the footer links, making them easy to manage.
