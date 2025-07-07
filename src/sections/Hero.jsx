@@ -1,5 +1,6 @@
 import {Button} from '../components/Button';
-
+import logo from '../assets/logo.svg';
+import hero from '../assets/hero-ui.png';
 export const Hero = () => {
     return (<section className="bg-neutral-900 grid-background relative overflow-hidden">
         {/* Header/Navigation (unchanged) */}
@@ -7,7 +8,7 @@ export const Hero = () => {
             <nav className="flex justify-between items-center">
                 <div className="text-3xl font-bold text-white">
                     {/* Your Signio Logo goes here */}
-                    <img src="/src/assets/logo.svg"/>
+                    <img src={logo}/>
                 </div>
                 <div className="hidden lg:flex gap-10 text-neutral-300">
                     <a href="#" className="hover:text-white transition-colors">Home</a>
@@ -75,7 +76,7 @@ export const Hero = () => {
         <div className="relative container mx-auto px-4 -mt-40 md:-mt-48 lg:-mt-56">
             <div className="relative w-full max-w-6xl mx-auto">
                 <img
-                    src="/src/assets/hero-ui.png"
+                    src={hero}
                     alt="Signio application showing a project development document"
                     className="w-full h-auto rounded-t-xl shadow-2xl shadow-black/40 object-cover"
                 />

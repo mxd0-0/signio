@@ -1,24 +1,34 @@
 // An array to hold the data for each feature card. This makes the code clean and easy to manage.
+import advantageEsign   from '../assets/advantage-esign.svg';
+import advantageCapture from '../assets/advantage-capture.svg';
+import advantageSharing from '../assets/advantage-sharing.svg';
+import advantageSecure  from '../assets/advantage-secure.svg';
+
+// --- data array ---
 const advantagesData = [
     {
         title: 'eSign from anywhere',
-        description: 'Upload documents from your device or cloud and add your signature with ease: draw, upload, or type it on your mobile device or laptop.',
-        imageSrc: '/src/assets/advantage-esign.svg' // <-- Your image path here
+        description:
+            'Upload documents from your device or cloud and add your signature with ease: draw, upload, or type it on your mobile device or laptop.',
+        imageSrc: advantageEsign,
     },
     {
         title: 'Capture legally e-signature',
-        description: 'Recipients receive notifications with passwords to access the task. Personalize your signatures, initials, or stamps.',
-        imageSrc: '/src/assets/advantage-capture.svg' // <-- Your image path here
+        description:
+            'Recipients receive notifications with passwords to access the task. Personalize your signatures, initials, or stamps.',
+        imageSrc: advantageCapture,
     },
     {
         title: 'Fast Document Sharing',
-        description: 'Upload documents from your device or cloud and add your signature with ease: draw, upload, or type it on your mobile device or laptop.',
-        imageSrc: '/src/assets/advantage-sharing.svg' // <-- Your image path here
+        description:
+            'Upload documents from your device or cloud and add your signature with ease: draw, upload, or type it on your mobile device or laptop.',
+        imageSrc: advantageSharing,
     },
     {
         title: 'Secure signing is priority',
-        description: 'Upload documents from your device or cloud and add your signature with ease: draw, upload, or type it on your mobile device or laptop.',
-        imageSrc: '/src/assets/advantage-secure.svg' // <-- Your image path here
+        description:
+            'Upload documents from your device or cloud and add your signature with ease: draw, upload, or type it on your mobile device or laptop.',
+        imageSrc: advantageSecure,
     },
 ];
 

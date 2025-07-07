@@ -1,15 +1,19 @@
 // src/sections/LogoCloud.jsx
-
+import autodesk from '../assets/autodesk.svg';
+import hubspot from '../assets/hubspot.svg';
+import zapier from '../assets/zapier.svg';
+import tataSteel from '../assets/tata-steel.svg';
+import bonusly from '../assets/bonusly.svg';
 import { BrandLogo } from '../components/BrandLogo';
 
 // Define the logos you want to display.
 // I will use the paths as if you've added the SVGs to `src/assets/`.
 const logos = [
-    { name: 'Autodesk', src: '/src/assets/autodesk.svg' },
-    { name: 'HubSpot', src: '/src/assets/hubspot.svg' },
-    { name: 'Zapier', src: '/src/assets/zapier.svg' },
-    { name: 'Tata Steel', src: '/src/assets/tata-steel.svg' },
-    { name: 'Bonusly', src: '/src/assets/bonusly.svg' },
+    { name: 'Autodesk', src: autodesk },
+    { name: 'HubSpot', src: hubspot },
+    { name: 'Zapier', src: zapier },
+    { name: 'Tata Steel', src: tataSteel },
+    { name: 'Bonusly', src: bonusly },
 ];
 
 export const LogoCloud = () => {

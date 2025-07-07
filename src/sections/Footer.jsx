@@ -1,4 +1,5 @@
 // src/sections/Footer.jsx
+import logo from '../assets/Logo.svg';
 
 export const Footer = () => {
     // Data object for the footer links, making them easy to manage.
@@ -22,9 +23,9 @@ export const Footer = () => {
                           Place your Logo.svg file inside the `src/assets/` directory.
                         */}
                         <img
-                            src="/src/assets/Logo.svg"
+                            src={logo}
                             alt="Signio Logo"
-                            className="h-9" // You can adjust the height (h-8, h-9, h-10) if needed
+                            className="h-9"
                         />
                         <p className="mt-6 text-neutral-400 max-w-xs">
                             Draw a digital signature on any computer, tablet, or mobile device.
