@@ -1,9 +1,9 @@
 // src/sections/LogoCloud.jsx
-import autodesk from '../assets/autodesk.svg';
-import hubspot from '../assets/hubspot.svg';
-import zapier from '../assets/zapier.svg';
+import autodesk from '../assets/Autodesk.svg';
+import hubspot from '../assets/HubSpot.svg';
+import zapier from '../assets/Zapier.svg';
 import tataSteel from '../assets/tata-steel.svg';
-import bonusly from '../assets/bonusly.svg';
+import bonusly from '../assets/Bonusly.svg';
 import { BrandLogo } from '../components/BrandLogo';
 
 // Define the logos you want to display.
