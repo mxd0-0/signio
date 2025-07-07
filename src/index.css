@@ -1,9 +1,5 @@
 @import "tailwindcss";
 /* src/index.css */
-@import url('https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&display=swap');
-@import "tailwindcss"; /* Keep this below the font import */
-/* src/index.css */
-@import url('https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&display=swap');
 @import "tailwindcss";
 
 @layer utilities {
