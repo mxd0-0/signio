@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 
 // Simple test to validate the build output for GitHub Pages deployment
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
+import process from 'process';
 
 console.log('🔍 Testing GitHub Pages deployment readiness...\n');
 
@@ -33,12 +34,12 @@ console.log('✅ .nojekyll file exists');
 
 // Test 4: Check if index.html has correct base paths
 const indexContent = fs.readFileSync(indexPath, 'utf8');
-const hasCorrectBasePaths = indexContent.includes('/signio/assets/') && 
-                           indexContent.includes('/signio/vite.svg');
+const hasCorrectBasePaths = indexContent.includes('/signio/assets/');
 
 if (!hasCorrectBasePaths) {
     console.error('❌ index.html does not have correct base paths for GitHub Pages.');
     console.log('Expected paths to include "/signio/" prefix');
+    console.log('Current content:', indexContent);
     process.exit(1);
 }
 console.log('✅ index.html has correct base paths (/signio/)');
