@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 // Script to validate GitHub Pages URL structure
-import process from 'process';
 
 console.log('📋 GitHub Pages Deployment Guide\n');
 
