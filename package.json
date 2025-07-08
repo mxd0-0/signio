@@ -10,7 +10,9 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "test:deployment": "node scripts/test-github-pages.js",
+    "validate:deployment": "node scripts/validate-deployment.js"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
