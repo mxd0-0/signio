@@ -1,52 +1,91 @@
-# signio
+# Signio
+<p align="center">
+  <img src="banner.png" alt="Image description" />
+</p>
 
-A React application for e-signature workflows, built with Vite and Tailwind CSS.
+🖋️ **A modern, secure digital signature platform that scales your workflow**
 
-## Development
+Signio is a comprehensive e-signature solution built with React that enables businesses to create, send, and manage digital documents with legally binding electronic signatures. From individual users to enterprise teams, Signio streamlines document workflows across any device.
 
-```bash
-npm install
-npm run dev
+## 🌟 Live Demo
+
+**[View Live Application →](https://mxd0-0.github.io/signio/)**
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React 19 with modern hooks and functional components
+- **Build Tool**: Vite 7 for fast development and optimized production builds
+- **Styling**: Tailwind CSS 4 with custom design system
+- **Animations**: Framer Motion for smooth, performant animations
+- **Code Quality**: ESLint with React-specific rules
+- **Deployment**: GitHub Pages with automated CI/CD
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Node.js 18+
+- npm or yarn package manager
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/mxd0-0/signio.git
+   cd signio
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
+
+   The application will be available at `http://localhost:5173`
+
+### Available Scripts
+
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start development server with hot reload |
+| `npm run build` | Build for production |
+| `npm run preview` | Preview production build locally |
+| `npm run lint` | Run ESLint code analysis |
+| `npm run deploy` | Deploy to GitHub Pages |
+| `npm run test:deployment` | Test GitHub Pages deployment readiness |
+| `npm run validate:deployment` | Validate deployment configuration |
+
+## 🏗️ Project Structure
+
 ```
-
-## Building for Production
-
-```bash
-npm run build
+signio/
+├── src/
+│   ├── components/          # Reusable UI components
+│   │   ├── Button.jsx       # Custom button component
+│   │   └── BrandLogo.jsx    # Brand logo component
+│   ├── sections/            # Page sections
+│   │   ├── Hero.jsx         # Landing page hero
+│   │   ├── Features.jsx     # Features showcase
+│   │   ├── Pricing.jsx      # Pricing plans
+│   │   ├── Advantages.jsx   # Key advantages
+│   │   ├── LogoCloud.jsx    # Trusted brands
+│   │   ├── CTA.jsx          # Call-to-action
+│   │   └── Footer.jsx       # Site footer
+│   ├── assets/              # Static assets (images, icons)
+│   ├── index.css           # Global styles and Tailwind config
+│   ├── App.jsx             # Main application component
+│   └── main.jsx            # Application entry point
+├── scripts/                 # Deployment and testing scripts
+├── public/                  # Public assets
+└── dist/                   # Production build output
 ```
+## 📄 License
 
-## GitHub Pages Deployment
+This project is part of a portfolio demonstration. Please check with the repository owner for usage rights.
 
-This project is configured for GitHub Pages deployment. There are two ways to deploy:
+---
 
-### Option 1: Automatic Deployment (Recommended)
-The project includes a GitHub Actions workflow that automatically builds and deploys to GitHub Pages when you push to the main branch. Make sure GitHub Pages is configured to deploy from "GitHub Actions" in your repository settings.
-
-### Option 2: Manual Deployment
-```bash
-npm run deploy
-```
-
-The site will be available at: https://mxd0-0.github.io/signio/
-
-## Troubleshooting GitHub Pages 404 Errors
-
-If you see 404 errors like `https://mxd0-0.github.io/src/main.jsx`, it means GitHub Pages is trying to serve source files instead of the built files. This happens when:
-
-1. GitHub Pages is configured to serve from the main branch instead of GitHub Actions
-2. The deployment hasn't been run yet
-
-**Solution**: Ensure GitHub Pages is set to deploy from "GitHub Actions" in your repository settings, or run `npm run deploy` to deploy to the gh-pages branch.
-
-## React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Built with ❤️ using React, Vite, and Tailwind CSS**
